@@ -66,18 +66,18 @@ This work is based on the example available in the ServiceNow webhook which is i
    - **cwpsa_resolution_flag** is used to choose whether or not you wish to set the **Resolution** flag against the ticket note added when a ticket is updated upon Problem resolution
      (This value must be **true** or **false**)
 
-   - Parameters starting with **cwpsa_cmpy_** are optionally used to map tickets to their correct companies in ConnectWise
-      - This implementation is rather simplistic in that it uses the first three letters of the Zabbix Problem *alert subject* to identify the company
+   - Parameters starting with **cwpsa_cmpy_** map tickets to their correct companies in ConnectWise
+      - The webhook selects the ConnectWise company ID at the start of the Zabbix Problem *alert subject*. It uses the longest ID that fits, so a shorter ID does not take a subject that starts with a longer one. The character after the ID must be the end of the subject, or not a letter, digit, or underscore. Matching ignores case.
 
 
-      - **cwpsa_cmpy_DEFAULT** must be used and must be set to the ConnectWise Client ID for the default company you wish to create tickets against (This is a Catchall scenario)
-      - **cwpsa_cmpy_XXX**, as an example, will contain the ConnectWise Client ID for the company you wish to assign a ticket who's Problem *alert subject* starts with XXX
+      - **cwpsa_cmpy_DEFAULT** must be used and must be set to the ConnectWise company ID for the default company you wish to create tickets against (This is a Catchall scenario)
+      - Each **cwpsa_cmpy_\<Company_ID\>** parameter is named with the ConnectWise company ID, and its value is that same ID
 
 
-         - You can add a new Parameter called **cwpsa_cmpy_ABC** with your Australian Broadcasting Corporation customer's Client ID as its value
-         - Now if you trigger a Zabbix Problem with an alert subject of "*ABC - Monitored host down*", this webhook will create the ConnectWise ticket against the Australian Broadcasting Corporation company
+         - **cwpsa_cmpy_OxspringNetwork** has the value **OxspringNetwork**
+         - A Zabbix Problem with an alert subject of "*OxspringNetwork - Monitored host down*" creates the ConnectWise ticket against that company
 
-      - Add as many **cwpsa_cmpy_???** Parameters as you need to map all your tickets for monitored customers to their correct ConnectWise company record
+      - The media type includes one parameter for each active customer company exported from ConnectWise
     
    - Parameters starting with **cwpsa_priority_** are optionally used to manage the ConnectWise *priority* assigned to a ticket as it's created, depending on the Zabbix *severity*.
   
@@ -99,7 +99,7 @@ This work is based on the example available in the ServiceNow webhook which is i
   
 ### 4. Setup custom trigger actions if using Connectwise company mappings
 
-   - As there is no easy way to write the three letter company acronym into the Problem *alert subject* in the webhook media **Messages Templates** config, the only way to get ConnectWise tickets mapping to their correct companies is to write individual alert triggers with custom operations which include the three letter acronym as the first three characters of the *alert subject*
+   - The Problem *alert subject* must start with the ConnectWise company ID, for example `OxspringNetwork - host down`. The webhook media **Messages Templates** config cannot inject that ID per host, so use trigger actions with custom operations whose alert subject starts with the company ID.
 
 ### 5. Review **Messages Templates** options to customise as you need
 

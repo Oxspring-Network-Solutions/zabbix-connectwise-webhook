@@ -1,5 +1,5 @@
 zabbix_export:
-  version: '6.4'
+  version: '7.4'
   media_types:
     - name: 'ConnectWise Manage PSA'
       type: WEBHOOK
@@ -9,43 +9,535 @@ zabbix_export:
         - name: alert_subject
           value: '{ALERT.SUBJECT}'
         - name: cwpsa_api_clientid
-          value: '<your cw developer clientid>'
+          value: f5ef33ce-5b3d-481a-9c59-f81e362759c3
         - name: cwpsa_api_password
-          value: '<your apimember privateKey>'
+          value: 5lkymDHow6ZeNwUf
         - name: cwpsa_api_url
-          value: 'https://<YOUR CW FQDN>/v4_6_release/apis/3.0/service/tickets/'
+          value: 'https://api-eu.myconnectwise.net/v4_6_release/apis/3.0/service/tickets/'
         - name: cwpsa_api_user
-          value: '<your apimember company+publicKey>'
+          value: oxspring+sBIN9VxesoVGyCer
+        - name: cwpsa_cmpy_315BAR
+          value: 315BAR
+        - name: cwpsa_cmpy_ACCSYS
+          value: ACCSYS
+        - name: cwpsa_cmpy_ACTEMIUM
+          value: ACTEMIUM
+        - name: cwpsa_cmpy_ACTIVE
+          value: ACTIVE
+        - name: cwpsa_cmpy_ADBI_360ICT
+          value: ADBI_360ICT
+        - name: cwpsa_cmpy_ADM
+          value: ADM
+        - name: cwpsa_cmpy_AGF
+          value: AGF
+        - name: cwpsa_cmpy_AGILE
+          value: AGILE
+        - name: cwpsa_cmpy_AIRSWEB
+          value: AIRSWEB
+        - name: cwpsa_cmpy_AIR_IT
+          value: AIR_IT
+        - name: cwpsa_cmpy_ALCIUM
+          value: ALCIUM
+        - name: cwpsa_cmpy_ALLEGHENY
+          value: ALLEGHENY
+        - name: cwpsa_cmpy_ALLEGHENY_GMBH
+          value: ALLEGHENY_GMBH
+        - name: cwpsa_cmpy_ALLEGHENY_SAS
+          value: ALLEGHENY_SAS
+        - name: cwpsa_cmpy_ALLIANCE
+          value: ALLIANCE
+        - name: cwpsa_cmpy_ALLSAINTS
+          value: ALLSAINTS
+        - name: cwpsa_cmpy_ALLVAC
+          value: ALLVAC
+        - name: cwpsa_cmpy_AMH
+          value: AMH
+        - name: cwpsa_cmpy_AMTRUST_LON
+          value: AMTRUST_LON
+        - name: cwpsa_cmpy_AMTRUST_NOT
+          value: AMTRUST_NOT
+        - name: cwpsa_cmpy_AMTRUST_UND
+          value: AMTRUST_UND
+        - name: cwpsa_cmpy_AMVIC
+          value: AMVIC
+        - name: cwpsa_cmpy_APPANNIE
+          value: APPANNIE
+        - name: cwpsa_cmpy_ARAN
+          value: ARAN
+        - name: cwpsa_cmpy_ARB
+          value: ARB
+        - name: cwpsa_cmpy_ASCARII
+          value: ASCARII
+        - name: cwpsa_cmpy_ASH
+          value: ASH
+        - name: cwpsa_cmpy_ASHE
+          value: ASHE
+        - name: cwpsa_cmpy_ASSOCIATE
+          value: ASSOCIATE
+        - name: cwpsa_cmpy_ASTREA
+          value: ASTREA
+        - name: cwpsa_cmpy_AvecSys
+          value: AvecSys
+        - name: cwpsa_cmpy_BALLYVESEY
+          value: BALLYVESEY
+        - name: cwpsa_cmpy_banctrust
+          value: banctrust
+        - name: cwpsa_cmpy_BANNER
+          value: BANNER
+        - name: cwpsa_cmpy_BARCODE
+          value: BARCODE
+        - name: cwpsa_cmpy_BARKER_BRETTELL
+          value: BARKER_BRETTELL
+        - name: cwpsa_cmpy_BARNSLEY_FACILITIES
+          value: BARNSLEY_FACILITIES
+        - name: cwpsa_cmpy_BARNSLEY_HOSPITAL
+          value: BARNSLEY_HOSPITAL
+        - name: cwpsa_cmpy_BBT
+          value: BBT
+        - name: cwpsa_cmpy_BEATSON
+          value: BEATSON
+        - name: cwpsa_cmpy_BIST
+          value: BIST
+        - name: cwpsa_cmpy_BLACH
+          value: BLACH
+        - name: cwpsa_cmpy_BM_CATALYSTS
+          value: BM_CATALYSTS
+        - name: cwpsa_cmpy_BOOHOO
+          value: BOOHOO
+        - name: cwpsa_cmpy_BRANTON_COURT
+          value: BRANTON_COURT
+        - name: cwpsa_cmpy_BRI_STOR
+          value: BRI_STOR
+        - name: 'cwpsa_cmpy_Bullhouse Mill'
+          value: 'Bullhouse Mill'
+        - name: 'cwpsa_cmpy_C35 Training'
+          value: 'C35 Training'
+        - name: cwpsa_cmpy_CCOMM
+          value: CCOMM
+        - name: cwpsa_cmpy_CCP
+          value: CCP
+        - name: cwpsa_cmpy_CCPAS
+          value: CCPAS
+        - name: cwpsa_cmpy_CEMA
+          value: CEMA
+        - name: cwpsa_cmpy_CHAMPION
+          value: CHAMPION
+        - name: cwpsa_cmpy_CHANDLEY
+          value: CHANDLEY
+        - name: cwpsa_cmpy_CHESTERFIELD_CHAMBERS
+          value: CHESTERFIELD_CHAMBERS
+        - name: cwpsa_cmpy_CHILLED_PUBS
+          value: CHILLED_PUBS
+        - name: cwpsa_cmpy_CHINA_UNICOM
+          value: CHINA_UNICOM
+        - name: cwpsa_cmpy_CLARITY_BT
+          value: CLARITY_BT
+        - name: cwpsa_cmpy_CLAYTON
+          value: CLAYTON
+        - name: cwpsa_cmpy_CLEVERNET
+          value: CLEVERNET
+        - name: cwpsa_cmpy_CLIPPER
+          value: CLIPPER
+        - name: cwpsa_cmpy_CLOUD4SURE
+          value: CLOUD4SURE
+        - name: cwpsa_cmpy_CLOUD_DIRECT
+          value: CLOUD_DIRECT
+        - name: cwpsa_cmpy_COMCEN
+          value: COMCEN
+        - name: cwpsa_cmpy_COMMISSUM
+          value: COMMISSUM
+        - name: cwpsa_cmpy_COMMPOINT
+          value: COMMPOINT
+        - name: cwpsa_cmpy_COMPASS
+          value: COMPASS
+        - name: cwpsa_cmpy_COMPLETE_IT
+          value: COMPLETE_IT
+        - name: cwpsa_cmpy_COOLSPIRIT
+          value: COOLSPIRIT
+        - name: cwpsa_cmpy_COPPICE
+          value: COPPICE
+        - name: cwpsa_cmpy_CUCKNEY
+          value: CUCKNEY
+        - name: cwpsa_cmpy_CULINA
+          value: CULINA
+        - name: cwpsa_cmpy_CULINAG
+          value: CULINAG
+        - name: cwpsa_cmpy_CULINA_IPS
+          value: CULINA_IPS
+        - name: cwpsa_cmpy_CWT
+          value: CWT
+        - name: cwpsa_cmpy_DAMEN
+          value: DAMEN
+        - name: cwpsa_cmpy_DATAFLOW
+          value: DATAFLOW
+        - name: cwpsa_cmpy_DATAQUEST
+          value: DATAQUEST
+        - name: 'cwpsa_cmpy_DATEL GROUP'
+          value: 'DATEL GROUP'
+        - name: cwpsa_cmpy_DEEPERTHANBLUE
+          value: DEEPERTHANBLUE
         - name: cwpsa_cmpy_DEFAULT
-          value: '<default company client id>'
-        - name: cwpsa_cmpy_XXX
-          value: '<company xxx client id>'
+          value: Catchall
+        - name: cwpsa_cmpy_DENCA
+          value: DENCA
+        - name: cwpsa_cmpy_DESIGN_GO
+          value: DESIGN_GO
+        - name: cwpsa_cmpy_DESTINATION_SPORT
+          value: DESTINATION_SPORT
+        - name: cwpsa_cmpy_DEXTRA
+          value: DEXTRA
+        - name: cwpsa_cmpy_DE_LAGE_LADEN
+          value: DE_LAGE_LADEN
+        - name: cwpsa_cmpy_DG_SCOTT
+          value: DG_SCOTT
+        - name: cwpsa_cmpy_DOLPHIN
+          value: DOLPHIN
+        - name: cwpsa_cmpy_DONCASTERHOSPITAL
+          value: DONCASTERHOSPITAL
+        - name: cwpsa_cmpy_ECOLOGICALCT
+          value: ECOLOGICALCT
+        - name: cwpsa_cmpy_ELECOMM
+          value: ELECOMM
+        - name: cwpsa_cmpy_ELKESLEY
+          value: ELKESLEY
+        - name: cwpsa_cmpy_ELLEN_MACARTHUR
+          value: ELLEN_MACARTHUR
+        - name: cwpsa_cmpy_ELTEK
+          value: ELTEK
+        - name: cwpsa_cmpy_EML
+          value: EML
+        - name: cwpsa_cmpy_ENVIROMENT
+          value: ENVIROMENT
+        - name: cwpsa_cmpy_ENVIRON
+          value: ENVIRON
+        - name: cwpsa_cmpy_EPAM
+          value: EPAM
+        - name: cwpsa_cmpy_EPITOMY
+          value: EPITOMY
+        - name: cwpsa_cmpy_Epson
+          value: Epson
+        - name: cwpsa_cmpy_EpsonEU
+          value: EpsonEU
+        - name: cwpsa_cmpy_EURAMAX
+          value: EURAMAX
+        - name: cwpsa_cmpy_EUROLEC
+          value: EUROLEC
+        - name: cwpsa_cmpy_EVERNORT
+          value: EVERNORT
+        - name: cwpsa_cmpy_EXTRONICS
+          value: EXTRONICS
+        - name: cwpsa_cmpy_FAIRFIELD
+          value: FAIRFIELD
+        - name: cwpsa_cmpy_FCLG
+          value: FCLG
+        - name: cwpsa_cmpy_FISCHER
+          value: FISCHER
+        - name: cwpsa_cmpy_FITZROVIA
+          value: FITZROVIA
+        - name: cwpsa_cmpy_FLRS
+          value: FLRS
+        - name: cwpsa_cmpy_FPMCCANN
+          value: FPMCCANN
+        - name: cwpsa_cmpy_FRAMEWORK
+          value: FRAMEWORK
+        - name: cwpsa_cmpy_FREEWAY
+          value: FREEWAY
+        - name: cwpsa_cmpy_FS_COM
+          value: FS_COM
+        - name: cwpsa_cmpy_FTPE
+          value: FTPE
+        - name: cwpsa_cmpy_GEMINI
+          value: GEMINI
+        - name: 'cwpsa_cmpy_GETINGE IE'
+          value: 'GETINGE IE'
+        - name: 'cwpsa_cmpy_Getinge UK'
+          value: 'Getinge UK'
+        - name: cwpsa_cmpy_GHD
+          value: GHD
+        - name: cwpsa_cmpy_GK_GROUNDWORKS
+          value: GK_GROUNDWORKS
+        - name: cwpsa_cmpy_GLOBAL
+          value: GLOBAL
+        - name: cwpsa_cmpy_GLOBALSER
+          value: GLOBALSER
+        - name: cwpsa_cmpy_GREATBEAR
+          value: GREATBEAR
+        - name: cwpsa_cmpy_GROUPAUTO
+          value: GROUPAUTO
+        - name: cwpsa_cmpy_GUIDED_ULTRASONICS
+          value: GUIDED_ULTRASONICS
+        - name: cwpsa_cmpy_GXOSERVICE
+          value: GXOSERVICE
+        - name: cwpsa_cmpy_GXO_LOGISTICS
+          value: GXO_LOGISTICS
+        - name: cwpsa_cmpy_GXO_LOGISTICS2
+          value: GXO_LOGISTICS2
+        - name: cwpsa_cmpy_HARIBO
+          value: HARIBO
+        - name: cwpsa_cmpy_HARTSHAW
+          value: HARTSHAW
+        - name: cwpsa_cmpy_HASMA
+          value: HASMA
+        - name: cwpsa_cmpy_HAYGARTH
+          value: HAYGARTH
+        - name: cwpsa_cmpy_HCOMM
+          value: HCOMM
+        - name: cwpsa_cmpy_HEIMDAL
+          value: HEIMDAL
+        - name: cwpsa_cmpy_HIGHSTREAM
+          value: HIGHSTREAM
+        - name: 'cwpsa_cmpy_HillRobinson Int Ltd'
+          value: 'HillRobinson Int Ltd'
+        - name: cwpsa_cmpy_HRBS
+          value: HRBS
+        - name: cwpsa_cmpy_HYPERSYNC
+          value: HYPERSYNC
+        - name: cwpsa_cmpy_IAAUK
+          value: IAAUK
+        - name: cwpsa_cmpy_INCONEL
+          value: INCONEL
+        - name: cwpsa_cmpy_INGRAMUK
+          value: INGRAMUK
+        - name: cwpsa_cmpy_INNOVATE
+          value: INNOVATE
+        - name: cwpsa_cmpy_JBS_GLOBAL_UK
+          value: JBS_GLOBAL_UK
+        - name: cwpsa_cmpy_JoW
+          value: JoW
+        - name: cwpsa_cmpy_JRI
+          value: JRI
+        - name: cwpsa_cmpy_KALEIDOSCOPE
+          value: KALEIDOSCOPE
+        - name: cwpsa_cmpy_KAUTEX_TEXTRON
+          value: KAUTEX_TEXTRON
+        - name: cwpsa_cmpy_KAUTEX_UNIPART
+          value: KAUTEX_UNIPART
+        - name: cwpsa_cmpy_KERRIDGE
+          value: KERRIDGE
+        - name: cwpsa_cmpy_KIRK_BALK
+          value: KIRK_BALK
+        - name: cwpsa_cmpy_KPG
+          value: KPG
+        - name: cwpsa_cmpy_LENZING
+          value: LENZING
+        - name: cwpsa_cmpy_LINBROOKE
+          value: LINBROOKE
+        - name: cwpsa_cmpy_LINEAGEA
+          value: LINEAGEA
+        - name: cwpsa_cmpy_LKQSYNETIQ
+          value: LKQSYNETIQ
+        - name: cwpsa_cmpy_LMS
+          value: LMS
+        - name: cwpsa_cmpy_LNT
+          value: LNT
+        - name: cwpsa_cmpy_MACDERMID
+          value: MACDERMID
+        - name: cwpsa_cmpy_MACH_RECRUITMENT
+          value: MACH_RECRUITMENT
+        - name: cwpsa_cmpy_MAGROCK
+          value: MAGROCK
+        - name: cwpsa_cmpy_MAHER
+          value: MAHER
+        - name: cwpsa_cmpy_MAXNET
+          value: MAXNET
+        - name: cwpsa_cmpy_MEADOWHALL
+          value: MEADOWHALL
+        - name: cwpsa_cmpy_MEDICOLEGAL
+          value: MEDICOLEGAL
+        - name: cwpsa_cmpy_MGI
+          value: MGI
+        - name: cwpsa_cmpy_MOLLARTCOX
+          value: MOLLARTCOX
+        - name: cwpsa_cmpy_MONKHOUSE
+          value: MONKHOUSE
+        - name: cwpsa_cmpy_MOORGATE
+          value: MOORGATE
+        - name: cwpsa_cmpy_MYHERMITAGE
+          value: MYHERMITAGE
+        - name: cwpsa_cmpy_MYHYSM
+          value: MYHYSM
+        - name: cwpsa_cmpy_NEC_SOFTWARE
+          value: NEC_SOFTWARE
+        - name: cwpsa_cmpy_NETOPA
+          value: NETOPA
+        - name: cwpsa_cmpy_NETWORK_SUPP
+          value: NETWORK_SUPP
+        - name: cwpsa_cmpy_NNS_ADVISERS
+          value: NNS_ADVISERS
+        - name: cwpsa_cmpy_NOTTSCITYTX
+          value: NOTTSCITYTX
+        - name: cwpsa_cmpy_OCI
+          value: OCI
+        - name: cwpsa_cmpy_ORONA
+          value: ORONA
+        - name: cwpsa_cmpy_OXA
+          value: OXA
+        - name: cwpsa_cmpy_OxspringNetwork
+          value: OxspringNetwork
+        - name: cwpsa_cmpy_PALMER
+          value: PALMER
+        - name: cwpsa_cmpy_PALRAM
+          value: PALRAM
+        - name: cwpsa_cmpy_PARKLANE
+          value: PARKLANE
+        - name: cwpsa_cmpy_PCLAIR
+          value: PCLAIR
+        - name: cwpsa_cmpy_PEGLER
+          value: PEGLER
+        - name: cwpsa_cmpy_PENSDOWN
+          value: PENSDOWN
+        - name: cwpsa_cmpy_PHARMACARE
+          value: PHARMACARE
+        - name: cwpsa_cmpy_PICAW
+          value: PICAW
+        - name: cwpsa_cmpy_PINEWOOD
+          value: PINEWOOD
+        - name: cwpsa_cmpy_PIRUM
+          value: PIRUM
+        - name: cwpsa_cmpy_PLT
+          value: PLT
+        - name: cwpsa_cmpy_PORTAKABIN
+          value: PORTAKABIN
+        - name: cwpsa_cmpy_PROEON
+          value: PROEON
+        - name: cwpsa_cmpy_PWP
+          value: PWP
+        - name: cwpsa_cmpy_PYRONIX
+          value: PYRONIX
+        - name: cwpsa_cmpy_QA
+          value: QA
+        - name: cwpsa_cmpy_Quadralene
+          value: Quadralene
+        - name: cwpsa_cmpy_QUADRIS
+          value: QUADRIS
+        - name: cwpsa_cmpy_QUANTUM
+          value: QUANTUM
+        - name: cwpsa_cmpy_QUEST_ELECTRICAL
+          value: QUEST_ELECTRICAL
+        - name: cwpsa_cmpy_QUORUM
+          value: QUORUM
+        - name: cwpsa_cmpy_RAMSDEN
+          value: RAMSDEN
+        - name: cwpsa_cmpy_REDDOT
+          value: REDDOT
+        - name: cwpsa_cmpy_REGENT_HIGH
+          value: REGENT_HIGH
+        - name: cwpsa_cmpy_RMCAPITAL
+          value: RMCAPITAL
+        - name: cwpsa_cmpy_SERVATEC
+          value: SERVATEC
+        - name: cwpsa_cmpy_SERVICE_CARE
+          value: SERVICE_CARE
+        - name: cwpsa_cmpy_SHEFFELECTRIC
+          value: SHEFFELECTRIC
+        - name: cwpsa_cmpy_SHSC_NHS
+          value: SHSC_NHS
+        - name: cwpsa_cmpy_SIMPSON_ASSOC
+          value: SIMPSON_ASSOC
+        - name: cwpsa_cmpy_SOGEFI
+          value: SOGEFI
+        - name: cwpsa_cmpy_SONOCO
+          value: SONOCO
+        - name: cwpsa_cmpy_SONOCO_PS
+          value: SONOCO_PS
+        - name: cwpsa_cmpy_SPECIALMELTED
+          value: SPECIALMELTED
+        - name: cwpsa_cmpy_SPORTS_TELECOMM
+          value: SPORTS_TELECOMM
+        - name: cwpsa_cmpy_SRL
+          value: SRL
+        - name: cwpsa_cmpy_SSB_GROUP
+          value: SSB_GROUP
+        - name: cwpsa_cmpy_SSN
+          value: SSN
+        - name: cwpsa_cmpy_STAFFING_GROUP
+          value: STAFFING_GROUP
+        - name: cwpsa_cmpy_STROUD_COUNCIL
+          value: STROUD_COUNCIL
+        - name: cwpsa_cmpy_SYNERGYUK
+          value: SYNERGYUK
+        - name: cwpsa_cmpy_SYPTE
+          value: SYPTE
+        - name: cwpsa_cmpy_TAPTON_SCHOOL
+          value: TAPTON_SCHOOL
+        - name: cwpsa_cmpy_TCV
+          value: TCV
+        - name: cwpsa_cmpy_TDG
+          value: TDG
+        - name: cwpsa_cmpy_TEST
+          value: TEST
+        - name: cwpsa_cmpy_THERMOSAFE
+          value: THERMOSAFE
+        - name: cwpsa_cmpy_THORNTON_HALL
+          value: THORNTON_HALL
+        - name: cwpsa_cmpy_TIMRIVETT
+          value: TIMRIVETT
+        - name: cwpsa_cmpy_TOMCHANDLEY_DONOTUSE
+          value: TOMCHANDLEY_DONOTUSE
+        - name: cwpsa_cmpy_TOR_COATINGS
+          value: TOR_COATINGS
+        - name: cwpsa_cmpy_TPTG
+          value: TPTG
+        - name: cwpsa_cmpy_TRANSACT
+          value: TRANSACT
+        - name: cwpsa_cmpy_TRANSWORLD
+          value: TRANSWORLD
+        - name: cwpsa_cmpy_TRIPLEPSLTD
+          value: TRIPLEPSLTD
+        - name: cwpsa_cmpy_TWC
+          value: TWC
+        - name: cwpsa_cmpy_UAE
+          value: UAE
+        - name: cwpsa_cmpy_UKBITS
+          value: UKBITS
+        - name: cwpsa_cmpy_UKSTEEL
+          value: UKSTEEL
+        - name: cwpsa_cmpy_UNIPOL
+          value: UNIPOL
+        - name: cwpsa_cmpy_UNITY_RESOURCING
+          value: UNITY_RESOURCING
+        - name: cwpsa_cmpy_WARRENS
+          value: WARRENS
+        - name: cwpsa_cmpy_WELLSPLASTICS
+          value: WELLSPLASTICS
+        - name: cwpsa_cmpy_WHITEGATES
+          value: WHITEGATES
+        - name: cwpsa_cmpy_XL_JOINERY
+          value: XL_JOINERY
+        - name: cwpsa_cmpy_XYZTestCompany
+          value: XYZTestCompany
+        - name: cwpsa_cmpy_YEARSLEY
+          value: YEARSLEY
+        - name: cwpsa_cmpy_YEARSLEY2
+          value: YEARSLEY2
+        - name: cwpsa_cmpy_YPHS
+          value: YPHS
         - name: cwpsa_priority_for_average
-          value: '<cw priority-average sev prob (2?)>'
+          value: '2'
         - name: cwpsa_priority_for_disaster
-          value: '<cw priority-disaster sev prob (1?)>'
+          value: '1'
         - name: cwpsa_priority_for_high
-          value: '<cw priority-high sev prob (1?)>'
+          value: '1'
         - name: cwpsa_priority_for_information
-          value: '<cw priority-info sev prob (4?)>'
+          value: '4'
         - name: cwpsa_priority_for_not_classified
-          value: '<cw priority-not classified sev prob (3?)>'
+          value: '3'
         - name: cwpsa_priority_for_warning
-          value: '<cw priority-warning sev prob (2?)>'
+          value: '2'
         - name: cwpsa_priority_is_used
           value: 'true'
         - name: cwpsa_resolution_flag
           value: 'true'
         - name: cwpsa_serviceboard_name
-          value: '<your cw board name>'
+          value: Support
         - name: cwpsa_status_new
-          value: '<your cw status for new tickets>'
+          value: New
         - name: cwpsa_status_resolved
-          value: '<your cw status for resolved tickets>'
+          value: '@Resolved'
         - name: cwpsa_ticket_id
           value: '{EVENT.TAGS.cwpsa_ticket_id}'
         - name: cwpsa_type
-          value: '<your cw ticket type>'
+          value: 'R2 - Monitoring Event'
         - name: event_nseverity
           value: '{EVENT.NSEVERITY}'
         - name: event_recovery_value
@@ -202,7 +694,7 @@ zabbix_export:
                     'Priority 4 - Low'
                 ],
                 process_tags = true;
-                cmpy_tla = '_CA';
+                cwpsa.companies = [];
         
             // Process parameters
             Object.keys(params)
@@ -211,12 +703,13 @@ zabbix_export:
                     if (key.startsWith('cwpsa_api_')) {
                         cwpsa[key.substring(10)] = params[key];
                     }
-                    // Prepare CW company three letter acronyms and check company Client ID exists
+                    // Prepare CW company IDs and check each company Client ID exists
                     else if (key.startsWith('cwpsa_cmpy_')) {
-                        if (params[key] !== '') {
-                            cwpsa['cmpy_tla_' + key.substring(11)] = params[key];
-                        } else {
+                        if (params[key] === '') {
                             throw 'Parameter "' + key + '" can\'t be empty and must contain the CW company Client ID.';
+                        }
+                        if (key !== 'cwpsa_cmpy_DEFAULT') {
+                            cwpsa.companies.push(params[key]);
                         }
                     }
                     // Prepare CW priority mapping
@@ -262,12 +755,26 @@ zabbix_export:
                 throw 'Recovery operations are supported only for trigger-based actions.';
             }
         
-            // Get correct company id parameter from first three characters of subject else use default
-            cmpy_tla = params.alert_subject.substring(0,3);
-            if (typeof cwpsa['cmpy_tla_' + cmpy_tla] !== 'undefined' ) {
-                company_id = cwpsa['cmpy_tla_' + cmpy_tla];
-            } else {
-                company_id = params.cwpsa_cmpy_DEFAULT;
+            // Longest company ID that is a prefix of the subject, else the default company
+            company_id = params.cwpsa_cmpy_DEFAULT;
+            if (typeof params.alert_subject === 'string') {
+                var subjectLower = params.alert_subject.toLowerCase();
+                var bestLen = 0;
+                cwpsa.companies.forEach(function (id) {
+                    var idLower = String(id).toLowerCase();
+                    if (!idLower || idLower.length <= bestLen) {
+                        return;
+                    }
+                    if (subjectLower.indexOf(idLower) !== 0) {
+                        return;
+                    }
+                    var next = subjectLower.charAt(idLower.length);
+                    if (next && /[a-z0-9_]/.test(next)) {
+                        return;
+                    }
+                    company_id = id;
+                    bestLen = idLower.length;
+                });
             }
         
             // Set data for new ticket post
@@ -374,7 +881,7 @@ zabbix_export:
       message_templates:
         - event_source: TRIGGERS
           operation_mode: PROBLEM
-          subject: 'Problem: Sev {TRIGGER.SEVERITY} : {EVENT.NAME}'
+          subject: '{EVENT.TAGS.customer} - {HOST.NAME}:{EVENT.NAME}'
           message: |
             **::: {EVENT.NAME} :::**
             
@@ -395,7 +902,7 @@ zabbix_export:
             Event update history: {EVENT.UPDATE.HISTORY}
         - event_source: TRIGGERS
           operation_mode: RECOVERY
-          subject: 'Resolved: Sev {TRIGGER.SEVERITY} : {EVENT.NAME}'
+          subject: '{EVENT.TAGS.customer} - {HOST.NAME}:{EVENT.NAME}'
           message: |
             **::: {EVENT.NAME} :::**
             
@@ -425,7 +932,7 @@ zabbix_export:
             Operational data: {EVENT.OPDATA}
         - event_source: TRIGGERS
           operation_mode: UPDATE
-          subject: 'Updated problem in {EVENT.AGE}: {EVENT.NAME}'
+          subject: '{EVENT.TAGS.customer} - Updated problem in {EVENT.AGE}: {EVENT.NAME}'
           message: |
             **Update**
             
